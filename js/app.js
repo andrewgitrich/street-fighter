@@ -2,11 +2,11 @@ $(document).ready(function() {
   $('.ryu').mouseenter(function() {
     $(".ryu-still").hide();
     $(".ryu-ready").show();
-  })/* no semicolon due to chaining of mouseleave*/ 
+  	})/* no semicolon due to chaining of mouseleave*/ 
 .mouseleave(function(){
 	$(".ryu-still").show();
 	$(".ryu-ready").hide();
-})
+	})
 
 .mousedown(function(){
 	$(".ryu-ready").hide();
@@ -16,7 +16,8 @@ $(document).ready(function() {
 .mouseup(function(){
 	$(".ryu-throwing").hide();
 	$(".ryu-ready").show();
-});
+	});
+
 
 });
 
