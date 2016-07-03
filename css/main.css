@@ -22,6 +22,7 @@ body{
 	height: 494px;
 }
 
+/*these wont show till an event happens*/
 .ryu-ready, .ryu-throwing {
   display: none;
 } 

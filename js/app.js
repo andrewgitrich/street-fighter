@@ -1,7 +1,23 @@
 $(document).ready(function() {
   $('.ryu').mouseenter(function() {
-    alert('mouse entered .ryu div');
-  });
+    $(".ryu-still").hide();
+    $(".ryu-ready").show();
+  })/* no semicolon due to chaining of mouseleave*/ 
+.mouseleave(function(){
+	$(".ryu-still").show();
+	$(".ryu-ready").hide();
+})
+
+.mousedown(function(){
+	$(".ryu-ready").hide();
+	$(".ryu-throwing").show();
+	$(".hadouken").show();
+	})
+.mouseup(function(){
+	$(".ryu-throwing").hide();
+	$(".ryu-ready").show();
+});
+
 });
 
 
