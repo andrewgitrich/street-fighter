@@ -12,18 +12,40 @@ body{
 	z-index: 1;
 }
 
+.hidden{
+	float: right;	
+	height: 450px;
+	width: 600px;
+
+}
+
+#first-p{
+	font-size: 25px;
+	margin-right: 185px;
+	margin-bottom: 115px;
+	display: none;
+
+}
+
+#second-p{
+	font-size: 25px;
+	margin-left: 180px;
+	display: none;
+}
+
+
 .ryu{
 	width: 569px;
 	height: 494px;
 }
 /*are these redundint? above and below*/
-.ryu-still, .ryu-ready, .ryu-throwing{
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool{
 	width: 569px;
 	height: 494px;
 }
 
 /*these wont show till an event happens*/
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -39,7 +61,7 @@ body{
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.hadouken, .ryu-ready, .ryu-throwing, .ryu-still{
+.hadouken, .ryu-ready, .ryu-throwing, .ryu-still, .ryu-cool{
 	background-repeat: no-repeat;
 }
 
@@ -56,3 +78,8 @@ body{
 
 }
 
+.ryu-cool{
+	background-image: url("../images/ryu-cool.gif");
+		/*display:none;
+		background-repeat: no-repeat;*/
+}
